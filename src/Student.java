@@ -15,22 +15,7 @@ public class Student extends User {
 
     @Override
     public String toString() {
-        return super.toString() + "\b, Graduation Year=" + graduationYear + ", Major=" + major + ']';
+        return "Student[ID=" + getId() + ", Name=" + getName() + ", GraduationYear=" + graduationYear + ", Major=" + major + "]";
     }
 
-    public int getGraduationYear() {
-        return graduationYear;
-    }
-
-    public void setGraduationYear(int graduationYear) {
-        this.graduationYear = graduationYear;
-    }
-
-    public String getMajor() {
-        return major;
-    }
-
-    public void setMajor(String major) {
-        this.major = major;
-    }
 }

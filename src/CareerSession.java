@@ -1,17 +1,9 @@
 public class CareerSession extends Session {
-    private String coachingTopic;
+    private String topic;
 
-    public CareerSession(Student student, Mentor mentor, String dateTime, String coachingTopic) {
+    public CareerSession(Student student, Mentor mentor, String dateTime, String topic) {
         super(student, mentor, dateTime);
-        this.coachingTopic = coachingTopic;
-    }
-
-    public String getCoachingTopic() {
-        return coachingTopic;
-    }
-
-    public void setCoachingTopic(String coachingTopic) {
-        this.coachingTopic = coachingTopic;
+        this.topic = topic;
     }
 
     @Override
@@ -21,14 +13,6 @@ public class CareerSession extends Session {
 
     @Override
     public String getDetails() {
-        return toString();
-    }
-
-    @Override
-    public String toString() {
-        return "Session#" + getSessionId() + " (" + getType() + ") [Student: " + getStudent().getName() +
-                ", Mentor: " + getMentor().getName() +
-                ", coachingTopic: " + getCoachingTopic() +
-                "]";
+        return "Topic: " + topic;
     }
 }

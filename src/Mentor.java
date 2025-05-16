@@ -17,30 +17,7 @@ public class Mentor extends User{
 
     @Override
     public String toString() {
-        return super.toString() + "\b, Department=" + department + ", Expertise=" + expertise + ", Years Of Experience=" + yearsOfExperience + ']';
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    public String getExpertise() {
-        return expertise;
-    }
-
-    public void setExpertise(String expertise) {
-        this.expertise = expertise;
-    }
-
-    public int getYearsOfExperience() {
-        return yearsOfExperience;
-    }
-
-    public void setYearsOfExperience(int yearsOfExperience) {
-        this.yearsOfExperience = yearsOfExperience;
+        return "Mentor[ID=" + getId() + ", Name=" + getName() +
+               ", Expertise=" + expertise + ", Department=" + department + ", Years Of Experience=" + yearsOfExperience + ']';
     }
 }
