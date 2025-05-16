@@ -1,8 +1,8 @@
-public class SubjectSession extends Session {
+public class SubjectSession  {
     private String subjectName;
 
     public SubjectSession(User user) {
-        super(user);
+//        super(user);
     }
 
     public String getSubjectName() {
