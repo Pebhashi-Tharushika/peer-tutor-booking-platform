@@ -1,18 +1,22 @@
 public abstract class User {
-     private static int id = 0;
+     private int id = 0;
      private String name;
+     private static int nextId = 1;
 
      User(String name) {
           this.name = name;
-          id++;
+          this.id = nextId++;
      }
 
-     public static int getId() {
+     abstract String getRole();
+
+     @Override
+     public String toString() {
+          return getRole() + "[ID=" + id + ", name=" + name + ']';
+     }
+
+     public int getId() {
           return id;
-     }
-
-     public static void setId(int id) {
-          User.id = id;
      }
 
      public String getName() {
