@@ -10,6 +10,8 @@ public class BookingPlatform {
     private Map<Integer, User> integerUserMap = new HashMap<>();
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        User user1 = new Student("Amal",2027,"IT");
+        System.out.println(user1.toString());
     }
 }

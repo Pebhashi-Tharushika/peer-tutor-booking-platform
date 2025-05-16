@@ -12,7 +12,7 @@ public abstract class User {
 
      @Override
      public String toString() {
-          return getRole() + "[ID=" + id + ", name=" + name + ']';
+          return getRole() + "[ID=" + id + ", Name=" + name + ']';
      }
 
      public int getId() {
