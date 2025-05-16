@@ -32,20 +32,10 @@ public abstract class Session {
         return dateTime;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
-    }
-
-    public void setMentor(Mentor mentor) {
-        this.mentor = mentor;
-    }
-
-    public void setDateTime(String dateTime) {
-        this.dateTime = dateTime;
-    }
-
     @Override
     public String toString() {
-        return "Session#" + sessionId + " (" + getType() + ") [Student: " + student.getName() + ", Mentor: " + mentor.getName() + "]";
+        return "Session#" + sessionId + " (" + getType() + " - " + getDetails() +
+                ") [Student: " + student.getName() + ", Mentor: " + mentor.getName() + ", Date and Time: " + dateTime + "]";
     }
+
 }
