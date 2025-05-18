@@ -32,7 +32,7 @@ public class BookingPlatform {
                 System.out.print("Enter student's major: ");
                 String major = sc.nextLine();
                 System.out.print("Enter student's graduation year: ");
-                int graduationYear = sc.nextInt();
+                int graduationYear = Integer.parseInt(sc.nextLine());
 
                 Student student = new Student(name, graduationYear, major);
                 students.add(student);
@@ -48,7 +48,7 @@ public class BookingPlatform {
                 System.out.print("Enter mentor's department: ");
                 String department = sc.nextLine();
                 System.out.print("Enter mentor's years of experience: ");
-                int yearsOfExperience = sc.nextInt();
+                int yearsOfExperience = Integer.parseInt(sc.nextLine());
 
                 Mentor mentor = new Mentor(name, department, expertise, yearsOfExperience);
                 mentors.add(mentor);
@@ -170,8 +170,9 @@ public class BookingPlatform {
             } else {
                 System.out.println("Invalid option. Please enter a number from 1 to 8.");
             }
-             sc.close();
+
         }
 
+        sc.close();
     }
 }
